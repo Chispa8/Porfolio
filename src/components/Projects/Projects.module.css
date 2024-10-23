@@ -1,0 +1,224 @@
+.projects {
+  padding: 4rem 0;
+  background-color: var(--bg-color);
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projectCard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.projectImageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.projectContent p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+.projectOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.projectDetails {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: var(--primary-color);
+}
+
+.projectDetails h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.projectDetails p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.projectStack {
+  margin-bottom: 1.5rem;
+}
+
+.projectStack h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.stackIcons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stackIcon {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectCard {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .projectDetails {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projectContent h3 {
+    font-size: 1.3rem;
+  }
+
+  .projectContent p {
+    font-size: 0.8rem;
+  }
+
+  .projectDetails h3 {
+    font-size: 1.5rem;
+  }
+
+  .projectDetails p {
+    font-size: 0.9rem;
+  }
+
+  .stackIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projectsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projectCard {
+    max-width: none;
+  }
+}

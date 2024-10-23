@@ -1,0 +1,32 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #0070f3;
+  --primary-color-dark: #0050a3;
+}
+
+.darkMode {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --primary-color: #3291ff;
+  --primary-color-dark: #1e70e0;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 1rem 2rem; /* Increased top padding to account for fixed header */
+}
+
+@media (max-width: 850px) {
+  .main {
+    padding: 5rem 1rem 1rem;
+  }
+}

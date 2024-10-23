@@ -1,0 +1,192 @@
+.experience {
+  padding: 4rem 1rem;
+  background-color: var(--bg-color);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timelineItem.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timelineItem::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--bg-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timelineItem:nth-child(odd) {
+  left: -10%;
+}
+
+.timelineItem:nth-child(even) {
+  left: 50%;
+}
+
+.timelineItem:nth-child(odd)::after {
+  right: -8px;
+}
+
+.timelineItem:nth-child(even)::after {
+  left: -8px;
+}
+
+.timelineContent {
+  padding: 20px;
+  background-color: var(--bg-color);
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .timeline::before {
+    left: 31px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timelineItem::after {
+    left: 23px;
+  }
+
+  .timelineItem:nth-child(odd) {
+    left: -0.2%;
+  }
+
+  .timelineItem:nth-child(even) {
+    left: 5.5%;
+  }
+
+  .timelineItem:nth-child(odd)::after {
+    right: auto;
+    left: 23px;
+  }
+
+  .timelineContent {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .company {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    padding: 3rem 0.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .timelineItem {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .timelineItem::after {
+    left: 13px;
+  }
+
+  .timelineContent {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .company {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
