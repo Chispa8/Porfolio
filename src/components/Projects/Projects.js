@@ -15,14 +15,13 @@ import styles from "./Projects.module.css"
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Shelter Project",
     description:
-      "Una plataforma de comercio electrónico completa construida con React, Node.js y MongoDB.",
-    image: "/placeholder.svg?height=400&width=600",
-    github: "https://github.com/yourusername/ecommerce-platform",
+      "A platform where you can adopt animals from a shelter built with React, Node.js and Firebase.",
+    image: "/images/ShelterProject.PNG",
+    github: "https://github.com/Chispa8/Shelter-project",
     live: "https://ecommerce-platform-demo.com",
-    summary:
-      "Plataforma de comercio electrónico escalable y de alto rendimiento con funciones avanzadas de carrito de compras, pasarela de pago segura y panel de administración.",
+    summary: "A platform where you can adopt animals from a shelter.",
     stack: [SiReact, SiNodedotjs, SiMongodb, SiJavascript],
   },
   {
@@ -88,7 +87,7 @@ function Projects() {
 
   return (
     <section className={styles.projects} id="projects">
-      <h2>Proyectos</h2>
+      <h2>Projects</h2>
       <div className={styles.projectsGrid}>
         {projects.map((project) => (
           <motion.div

@@ -3,23 +3,30 @@ import styles from "./Experience.module.css"
 
 const experiences = [
   {
-    date: "Abril 2021 - Presente",
-    title: "Desarrollador Full Stack Senior",
-    company: "Tech Innovators Inc.",
+    date: "October 2024 - Present",
+    title: "Quality technician",
+    company: "Neocom",
     description:
       "Lideré el desarrollo de aplicaciones web escalables utilizando React, Node.js y AWS. Implementé CI/CD y mejoré el rendimiento de las aplicaciones existentes.",
   },
   {
-    date: "Enero 2019 - Marzo 2021",
-    title: "Desarrollador Front-end",
-    company: "Web Solutions Co.",
+    date: "July 2023",
+    title: "Technical staff",
+    company: "Roboplan",
     description:
       "Desarrollé interfaces de usuario responsivas y accesibles utilizando React y Vue.js. Colaboré en la migración de una aplicación legacy a una arquitectura moderna de componentes.",
   },
   {
-    date: "Junio 2018 - Diciembre 2018",
-    title: "Pasante de Desarrollo",
-    company: "StartUp Dynamics",
+    date: "January 2018 - May 2023",
+    title: "Team Lead",
+    company: "Stats Perform",
+    description:
+      "Asistí en el desarrollo de características para una aplicación móvil utilizando React Native. Participé en code reviews y sesiones de pair programming.",
+  },
+  {
+    date: "September 2014 - December 2017",
+    title: "Data Analyst",
+    company: "Stats Perform",
     description:
       "Asistí en el desarrollo de características para una aplicación móvil utilizando React Native. Participé en code reviews y sesiones de pair programming.",
   },
@@ -52,7 +59,7 @@ function Experience() {
 
   return (
     <section className={styles.experience} id="experience">
-      <h2 className={styles.sectionTitle}>Experiencia Laboral</h2>
+      <h2 className={styles.sectionTitle}>Experience</h2>
       <div className={styles.timeline} ref={timelineRef}>
         {experiences.map((exp, index) => (
           <div key={index} className={styles.timelineItem}>

@@ -56,11 +56,11 @@
 }
 
 .timelineItem:nth-child(odd) {
-  left: -10%;
+  left: -10.1%;
 }
 
 .timelineItem:nth-child(even) {
-  left: 50%;
+  left: 49.8%;
 }
 
 .timelineItem:nth-child(odd)::after {

@@ -28,7 +28,7 @@ function About() {
 
   return (
     <section ref={aboutRef} className={styles.about}>
-      <h2>Sobre Mí</h2>
+      <h2>About me</h2>
       <div className={styles.content}>
         <img
           src="/placeholder.svg?height=300&width=300"
