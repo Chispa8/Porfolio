@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import { FaGithub, FaExternalLinkAlt, FaQuestionCircle } from "react-icons/fa"
 import {
   SiJavascript,
   SiReact,
@@ -9,6 +9,8 @@ import {
   SiNextdotjs,
   SiGraphql,
   SiTypescript,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si"
 import styles from "./Projects.module.css"
 
@@ -20,7 +22,7 @@ const projects = [
       "A platform where you can adopt animals from a shelter built with React, Node.js and Firebase.",
     image: "/images/ShelterProject.PNG",
     github: "https://github.com/Chispa8/Shelter-project",
-    live: "",
+    // live: "https://yourportfolio.com",
     summary:
       "A comprehensive platform facilitating animal adoption from shelters. Built with React for a responsive frontend, Node.js for robust backend operations, and Firebase for real-time database management. Features include animal profiles, adoption request system, and shelter management tools.",
     stack: [SiReact, SiNodedotjs, SiMongodb, SiJavascript],
@@ -32,7 +34,7 @@ const projects = [
       "Una aplicación de gestión de tareas con autenticación de usuarios y almacenamiento en tiempo real.",
     image: "/images/RealmGame.PNG",
     github: "https://github.com/Chispa8/Realm-Game",
-    live: "https://task-manager-demo.com",
+    // live: "https://yourportfolio.com",
     summary:
       "Aplicación de gestión de tareas avanzada con funciones de colaboración en tiempo real. Incluye autenticación de usuarios, recordatorios personalizables, etiquetas para organización, y sincronización en múltiples dispositivos. Utiliza React para la interfaz de usuario, Node.js para la lógica del servidor, MongoDB para almacenamiento persistente, y TypeScript para un código más robusto y mantenible.",
     stack: [SiReact, SiNodedotjs, SiMongodb, SiTypescript],
@@ -44,34 +46,33 @@ const projects = [
       "Un dashboard del clima que muestra pronósticos en tiempo real utilizando una API de clima.",
     image: "/images/Porfolio.PNG",
     github: "https://github.com/yourusername/weather-dashboard",
-    live: "https://weather-dashboard-demo.com",
+    // live: "https://yourportfolio.com",
     summary:
       "Dashboard de clima interactivo y completo. Ofrece visualizaciones de datos avanzadas para temperaturas, precipitaciones, y patrones climáticos. Incluye pronósticos a largo plazo, alertas meteorológicas personalizables, y mapas interactivos. Desarrollado con React para una interfaz de usuario dinámica y JavaScript para la lógica de la aplicación, integrando APIs de clima en tiempo real para datos precisos y actualizados.",
     stack: [SiReact, SiJavascript],
   },
   {
     id: 4,
-    title: "Portfolio Website",
+    title: "Dungeon Arcade",
     description:
       "Un sitio web de portfolio personal construido con React y animaciones personalizadas.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/DungeonArcade.PNG",
     github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.com",
+    // live: "https://yourportfolio.com",
     summary:
-      "Sitio web de portfolio moderno y responsivo diseñado para mostrar proyectos y habilidades de manera atractiva. Cuenta con secciones interactivas que incluyen una galería de proyectos, timeline de experiencia, y formulario de contacto. Las animaciones fluidas mejoran la experiencia del usuario, mientras que la optimización para motores de búsqueda asegura una buena visibilidad online. Desarrollado con React para una interfaz de usuario dinámica y JavaScript para funcionalidades personalizadas.",
-    stack: [SiReact, SiJavascript],
+      "where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
+    stack: [SiHtml5, SiCss3],
   },
   {
     id: 5,
-    title: "Blog Platform",
+    title: "Comming soon...",
     description:
-      "Una plataforma de blog con funcionalidades de CMS construida con Next.js y GraphQL.",
-    image: "/placeholder.svg?height=400&width=600",
-    github: "https://github.com/yourusername/blog-platform",
-    live: "https://blog-platform-demo.com",
+      "Always working on a next project to improve my skils wherever I am.",
+    image: "/images/ComingSoon.PNG",
+    github: "https://github.com/Chispa8",
     summary:
       "Plataforma de blog escalable y potente con funcionalidades avanzadas de CMS. Incluye un editor de contenido rico para una creación de posts intuitiva, sistema de categorización y etiquetado avanzado para una mejor organización del contenido, y análisis de rendimiento integrado para optimizar el SEO. Desarrollada con Next.js para un rendimiento óptimo y SEO mejorado, GraphQL para consultas de datos eficientes, y TypeScript para un desarrollo más seguro y mantenible. La plataforma también ofrece autenticación de usuarios, comentarios en tiempo real, y un panel de administración completo.",
-    stack: [SiNextdotjs, SiGraphql, SiTypescript],
+    stack: [FaQuestionCircle, FaQuestionCircle, FaQuestionCircle],
   },
 ]
 

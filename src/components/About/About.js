@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 import {
   SiJavascript,
   SiReact,
@@ -73,11 +73,26 @@ function About() {
         animate={controls}
         variants={containerVariants}
       >
+        <motion.div className={styles.skillsSection} variants={itemVariants}>
+          <h3>Skills</h3>
+          <div className={styles.skills}>
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                className={styles.skill}
+                variants={itemVariants}
+              >
+                <skill.icon className={styles.skillIcon} />
+                <span>{skill.name}</span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
         <motion.h2 variants={itemVariants}>About Me</motion.h2>
         <div className={styles.content}>
           <motion.div className={styles.imageWrapper} variants={itemVariants}>
             <img
-              src="/placeholder.svg?height=400&width=400"
+              src="/images/FotoVerde.PNG"
               alt="Juan Carlos"
               className={styles.profileImage}
             />
@@ -105,24 +120,6 @@ function About() {
                 personal growth, both in my professional and personal life.
               </p>
             </motion.div>
-            <motion.div
-              className={styles.skillsSection}
-              variants={itemVariants}
-            >
-              <h3>Skills</h3>
-              <div className={styles.skills}>
-                {skills.map((skill, index) => (
-                  <motion.div
-                    key={index}
-                    className={styles.skill}
-                    variants={itemVariants}
-                  >
-                    <skill.icon className={styles.skillIcon} />
-                    <span>{skill.name}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
             <motion.div className={styles.cta} variants={itemVariants}>
               <a
                 href="mailto:caftpjuancarlos@gmail.com"
@@ -147,13 +144,8 @@ function About() {
                 >
                   <FaLinkedin />
                 </a>
-                <a
-                  href="https://twitter.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter />
+                <a href="mailto:caftpjuancarlos@gmail.com" aria-label="Email">
+                  <FaEnvelope />
                 </a>
               </div>
             </motion.div>
