@@ -1,16 +1,26 @@
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #f1edec;
   --text-color: #333333;
-  --primary-color: #0070f3;
-  --primary-color-dark: #0050a3;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
 }
 
-.darkMode {
-  --bg-color: #1a1a1a;
-  --text-color: #ffffff;
-  --primary-color: #3291ff;
-  --primary-color-dark: #1e70e0;
+[data-theme="dark"] {
+  --bg-color: #312e2d;
+  --text-color: #f1edec;
+  --primary-color: #4da8ff;
+  --secondary-color: #a1a8ae;
+  --accent-color: #34ce57;
 }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Rest of your global styles */
 
 .app {
   min-height: 100vh;

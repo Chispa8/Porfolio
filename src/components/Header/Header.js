@@ -35,6 +35,10 @@ function Header({ darkMode, toggleDarkMode }) {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [scrolled])
 
+  useEffect(() => {
+    document.body.setAttribute("data-theme", darkMode ? "dark" : "light")
+  }, [darkMode])
+
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.headerContent}>
