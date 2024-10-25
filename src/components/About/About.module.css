@@ -1,50 +1,129 @@
 .about {
-  padding: 4rem 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.about.visible {
-  opacity: 1;
-  transform: translateY(0);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .about h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.imageWrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .profileImage {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bio {
-  flex: 1;
+.imageWrapper:hover .profileImage {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.bio p {
-  margin-bottom: 1rem;
+.bioWrapper {
+  max-width: 800px;
+  text-align: center;
+}
+
+.bioWrapper p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.skillsSection {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.skillsSection h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+
+.skillIcon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover .skillIcon {
+  transform: translateY(-5px);
+}
+
+.skill span {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.cta {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .contactButton {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--bg-color);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactButton svg {
+  margin-right: 0.5rem;
 }
 
 .contactButton:hover {
@@ -52,15 +131,67 @@
   transform: translateY(-3px);
 }
 
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLinks a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
+  .about h2 {
+    font-size: 2rem;
   }
 
-  .profileImage {
+  .imageWrapper {
     width: 200px;
     height: 200px;
-    margin-bottom: 1rem;
+  }
+
+  .bioWrapper p {
+    font-size: 1rem;
+  }
+
+  .skillsSection h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    gap: 1.5rem;
+  }
+
+  .skill {
+    width: 80px;
+  }
+
+  .skillIcon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .skills {
+    gap: 1rem;
+  }
+
+  .skill {
+    width: 70px;
+  }
+
+  .skillIcon {
+    font-size: 2rem;
   }
 }
