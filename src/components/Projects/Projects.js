@@ -55,7 +55,7 @@ const projects = [
     github: "https://github.com/yourusername/portfolio",
     summary:
       "where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
-    stack: [SiHtml5, SiCss3],
+    stack: [SiJavascript, SiHtml5, SiCss3],
   },
   {
     id: 5,
