@@ -6,8 +6,6 @@ import {
   SiReact,
   SiNodedotjs,
   SiMongodb,
-  SiNextdotjs,
-  SiGraphql,
   SiTypescript,
   SiHtml5,
   SiCss3,
@@ -22,7 +20,6 @@ const projects = [
       "A platform where you can adopt animals from a shelter built with React, Node.js and Firebase.",
     image: "/images/ShelterProject.PNG",
     github: "https://github.com/Chispa8/Shelter-project",
-    // live: "https://yourportfolio.com",
     summary:
       "A comprehensive platform facilitating animal adoption from shelters. Built with React for a responsive frontend, Node.js for robust backend operations, and Firebase for real-time database management. Features include animal profiles, adoption request system, and shelter management tools.",
     stack: [SiReact, SiNodedotjs, SiMongodb, SiJavascript],
@@ -34,7 +31,6 @@ const projects = [
       "Una aplicación de gestión de tareas con autenticación de usuarios y almacenamiento en tiempo real.",
     image: "/images/RealmGame.PNG",
     github: "https://github.com/Chispa8/Realm-Game",
-    // live: "https://yourportfolio.com",
     summary:
       "Aplicación de gestión de tareas avanzada con funciones de colaboración en tiempo real. Incluye autenticación de usuarios, recordatorios personalizables, etiquetas para organización, y sincronización en múltiples dispositivos. Utiliza React para la interfaz de usuario, Node.js para la lógica del servidor, MongoDB para almacenamiento persistente, y TypeScript para un código más robusto y mantenible.",
     stack: [SiReact, SiNodedotjs, SiMongodb, SiTypescript],
@@ -46,7 +42,6 @@ const projects = [
       "Un dashboard del clima que muestra pronósticos en tiempo real utilizando una API de clima.",
     image: "/images/Porfolio.PNG",
     github: "https://github.com/yourusername/weather-dashboard",
-    // live: "https://yourportfolio.com",
     summary:
       "Dashboard de clima interactivo y completo. Ofrece visualizaciones de datos avanzadas para temperaturas, precipitaciones, y patrones climáticos. Incluye pronósticos a largo plazo, alertas meteorológicas personalizables, y mapas interactivos. Desarrollado con React para una interfaz de usuario dinámica y JavaScript para la lógica de la aplicación, integrando APIs de clima en tiempo real para datos precisos y actualizados.",
     stack: [SiReact, SiJavascript],
@@ -58,7 +53,6 @@ const projects = [
       "Un sitio web de portfolio personal construido con React y animaciones personalizadas.",
     image: "/images/DungeonArcade.PNG",
     github: "https://github.com/yourusername/portfolio",
-    // live: "https://yourportfolio.com",
     summary:
       "where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
     stack: [SiHtml5, SiCss3],

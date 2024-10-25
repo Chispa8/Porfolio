@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 import {
   SiJavascript,
   SiReact,

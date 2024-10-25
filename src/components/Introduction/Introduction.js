@@ -12,7 +12,7 @@ const slides = [
   {
     gradientClass: styles.bgGradient1,
     title: "Juan Carlos Here!",
-    subtitle: "Full Stack Developer",
+    subtitle: "Junior Full Stack Developer",
     description: "Learning every day is the way to build a brighter future.",
   },
   {
