@@ -22,10 +22,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav {
   flex-grow: 1;
+  margin: 0 1rem;
 }
 
 .navList {
@@ -34,10 +36,11 @@
   margin: 0;
   padding: 0;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .navList li {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
 }
 
 .navList a {
@@ -46,8 +49,9 @@
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 20px;
+  font-size: 0.9rem;
 }
 
 .navList a:hover,
@@ -65,13 +69,13 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-color);
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .darkModeToggle:hover {
@@ -80,21 +84,39 @@
 
 @media (max-width: 768px) {
   .headerContent {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.5rem;
   }
 
   .navList {
-    margin-top: 1rem;
+    margin-top: 0;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .navList li {
-    margin: 0.25rem;
+    margin: 0 0.1rem;
+  }
+
+  .navList a {
+    padding: 0.25rem;
+    font-size: 0.8rem;
   }
 
   .darkModeToggle {
-    margin-top: 1rem;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navList a {
+    padding: 0.25rem 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .darkModeToggle {
+    font-size: 0.9rem;
   }
 }

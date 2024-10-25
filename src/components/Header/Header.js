@@ -65,11 +65,7 @@ function Header({ darkMode, toggleDarkMode }) {
             darkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"
           }
         >
-          {darkMode ? (
-            <FaMoon className={styles.darkIcon} />
-          ) : (
-            <FaSun className={styles.lightIcon} />
-          )}
+          {darkMode ? <FaMoon /> : <FaSun />}
         </button>
       </div>
     </header>

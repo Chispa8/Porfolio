@@ -15,7 +15,7 @@
 
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -34,13 +34,26 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .projectCard:hover {
-  transform: translateY(-5px);
   box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+  background: linear-gradient(
+    135deg,
+    rgba(100, 100, 255, 0.2) 0%,
+    rgba(100, 100, 255, 0.1) 100%
+  );
+}
+
+.projectCard.expanded {
+  grid-column: span 2;
+  background: linear-gradient(
+    135deg,
+    rgba(100, 100, 255, 0.3) 0%,
+    rgba(100, 100, 255, 0.2) 100%
+  );
 }
 
 .projectImageContainer {
@@ -71,105 +84,51 @@
   font-weight: 700;
 }
 
-.projectContent p {
+.projectDescription,
+.projectSummary {
   font-size: 0.9rem;
   line-height: 1.4;
   color: var(--text-color);
-}
-
-.projectOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.projectDetails {
-  background-color: var(--bg-color);
-  border-radius: 20px;
-  padding: 2rem;
-  max-width: 800px;
-  width: 90%;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
-
-.closeButton {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.closeButton:hover {
-  color: var(--primary-color);
-}
-
-.projectDetails h3 {
-  font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--primary-color);
 }
 
-.projectDetails p {
+.projectSummary {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: var(--text-color);
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .projectStack {
-  margin-bottom: 1.5rem;
-}
-
-.projectStack h4 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-
-.stackIcons {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .stackIcon {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--text-color);
 }
 
 .projectLinks {
   display: flex;
-  gap: 1rem;
-}
-
-.projectLinks a {
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.projectLinks a:hover {
-  background-color: var(--primary-color-dark);
+.githubLink,
+.liveLink {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.githubLink:hover,
+.liveLink:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
@@ -177,13 +136,9 @@
     grid-template-columns: 1fr;
   }
 
-  .projectCard {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .projectDetails {
-    padding: 1.5rem;
+  .projectCard,
+  .projectCard.expanded {
+    grid-column: span 1;
   }
 }
 
@@ -196,20 +151,15 @@
     font-size: 1.3rem;
   }
 
-  .projectContent p {
+  .projectDescription,
+  .projectSummary {
     font-size: 0.8rem;
   }
 
-  .projectDetails h3 {
-    font-size: 1.5rem;
-  }
-
-  .projectDetails p {
-    font-size: 0.9rem;
-  }
-
-  .stackIcon {
-    font-size: 1.5rem;
+  .stackIcon,
+  .githubLink,
+  .liveLink {
+    font-size: 1rem;
   }
 }
 
@@ -218,7 +168,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .projectCard {
-    max-width: none;
+  .projectCard.expanded {
+    grid-column: span 2;
   }
 }
