@@ -47,16 +47,46 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 60px; /* Add space for social icons */
+  padding-bottom: 60px;
 }
 
-.content h1 {
-  font-size: 4rem;
+.slidingNameContainer {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.slidingNameWrapper {
+  position: absolute;
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slideText 15s linear infinite;
+}
+
+.slidingName {
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 0.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  transition: transform 0.1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.666%);
+  }
 }
 
 .content h2 {
@@ -149,6 +179,30 @@
   transform: translateY(-3px);
 }
 
+.bgGradient1 {
+  background: linear-gradient(45deg, #1a237e, #4a148c, #311b92, #6a1b9a);
+  background-size: 300% 300%;
+  animation: gradient1 10s ease infinite;
+}
+
+.bgGradient2 {
+  background: linear-gradient(-45deg, #004d40, #00695c, #00796b, #00897b);
+  background-size: 300% 300%;
+  animation: gradient2 10s ease infinite;
+}
+
+.bgGradient3 {
+  background: linear-gradient(135deg, #bf360c, #d84315, #e64a19, #f4511e);
+  background-size: 300% 300%;
+  animation: gradient3 10s ease infinite;
+}
+
+.bgGradient4 {
+  background: linear-gradient(-135deg, #1a237e, #283593, #303f9f, #3949ab);
+  background-size: 300% 300%;
+  animation: gradient4 10s ease infinite;
+}
+
 @keyframes gradient1 {
   0% {
     background-position: 0% 50%;
@@ -197,38 +251,13 @@
   }
 }
 
-.bgGradient1 {
-  background: linear-gradient(45deg, #1a237e, #4a148c, #311b92, #6a1b9a);
-  background-size: 300% 300%;
-  animation: gradient1 10s ease infinite;
-}
-
-.bgGradient2 {
-  background: linear-gradient(-45deg, #004d40, #00695c, #00796b, #00897b);
-  background-size: 300% 300%;
-  animation: gradient2 10s ease infinite;
-}
-
-.bgGradient3 {
-  background: linear-gradient(135deg, #bf360c, #d84315, #e64a19, #f4511e);
-  background-size: 300% 300%;
-  animation: gradient3 10s ease infinite;
-}
-
-.bgGradient4 {
-  background: linear-gradient(-135deg, #1a237e, #283593, #303f9f, #3949ab);
-  background-size: 300% 300%;
-  animation: gradient4 10s ease infinite;
-}
-
 @media (max-width: 768px) {
-  .content {
-    font-size: 3rem;
-    padding-bottom: 80px; /* Increase padding for smaller screens */
+  .slidingName {
+    font-size: 3.5rem;
   }
 
-  .content h1 {
-    font-size: 3rem;
+  .slidingNameContainer {
+    height: 90px;
   }
 
   .content h2 {
@@ -243,19 +272,15 @@
     font-size: 1.5rem;
     padding: 0.75rem;
   }
-
-  .socialLinks {
-    bottom: 3rem;
-  }
-
-  .indicators {
-    bottom: 6rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .content h1 {
+  .slidingName {
     font-size: 2.5rem;
+  }
+
+  .slidingNameContainer {
+    height: 70px;
   }
 
   .content h2 {

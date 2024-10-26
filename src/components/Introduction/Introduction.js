@@ -11,26 +11,22 @@ import styles from "./Introduction.module.css"
 const slides = [
   {
     gradientClass: styles.bgGradient1,
-    title: "Juan Carlos Here!",
     subtitle: "Junior Full Stack Developer",
     description: "Learning every day is the way to build a brighter future.",
   },
   {
     gradientClass: styles.bgGradient2,
-    title: "Create",
     subtitle: "Turning ideas into reality",
     description: "Passionate about developing elegant and efficient solutions.",
   },
   {
     gradientClass: styles.bgGradient3,
-    title: "Inspire",
     subtitle: "Building a brighter future",
     description:
       "Committed to continuous learning and growth in the tech world.",
   },
   {
     gradientClass: styles.bgGradient4,
-    title: "Evolve",
     subtitle: "Let's collaborate",
     description: "Let's create our next mind-blowing experience together!",
   },
@@ -75,15 +71,19 @@ function Introduction() {
             } ${slide.gradientClass}`}
           >
             <div className={styles.content}>
-              <h1
-                style={{
-                  transform: `translate(${mousePosition.x * 20}px, ${
-                    mousePosition.y * 20
-                  }px)`,
-                }}
-              >
-                {slide.title}
-              </h1>
+              <div className={styles.slidingNameContainer}>
+                <div className={styles.slidingNameWrapper}>
+                  <span className={styles.slidingName}>
+                    Juan Carlos Poblete Uría
+                  </span>
+                  <span className={styles.slidingName}>
+                    Juan Carlos Poblete Uría
+                  </span>
+                  <span className={styles.slidingName}>
+                    Juan Carlos Poblete Uría
+                  </span>
+                </div>
+              </div>
               <h2
                 style={{
                   transform: `translate(${mousePosition.x * 15}px, ${
@@ -145,7 +145,6 @@ function Introduction() {
           <FaGithub />
         </a>
       </div>
-      <div className={styles.gradientOverlay}></div>
     </section>
   )
 }

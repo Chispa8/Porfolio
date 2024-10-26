@@ -7,28 +7,28 @@ const experiences = [
     title: "Quality technician",
     company: "Neocom",
     description:
-      "Lideré el desarrollo de aplicaciones web escalables utilizando React, Node.js y AWS. Implementé CI/CD y mejoré el rendimiento de las aplicaciones existentes.",
+      "Manage product returns from clients, thoroughly inspecting items to ensure they meet specified quality parameters. This role involves close monitoring of stock levels to maintain adequate inventory, ensuring efficient operations and preventing potential shortages. Additionally, I maintain regular communication with clients, addressing their concerns and providing timely updates on product quality, returns, and stock availability.",
   },
   {
     date: "July 2023",
     title: "Technical staff",
     company: "Roboplan",
     description:
-      "Desarrollé interfaces de usuario responsivas y accesibles utilizando React y Vue.js. Colaboré en la migración de una aplicación legacy a una arquitectura moderna de componentes.",
+      "Swiftly adapt to meet deadlines, effectively communicate to optimize work processes, and ensure a safe working environment by comprehending robot functionalities as a Robotics Technician.",
   },
   {
     date: "January 2018 - May 2023",
     title: "Team Lead",
     company: "Stats Perform",
     description:
-      "Asistí en el desarrollo de características para una aplicación móvil utilizando React Native. Participé en code reviews y sesiones de pair programming.",
+      "In high-pressure environments with tight deadlines, I have effectively led direct reports, elevating team performance and initiating improvement strategies.\n Working alongside experienced peers and serving demanding clients, extensive research and coordination have been essential to meeting rigorous expectations. By guiding teams through challenging situations and sharing tools to enhance efficiency, I fostered growth and ensured consistent delivery excellence. Balancing multiple responsibilities, I managed team KPIs and developed strategic approaches to optimize overall performance and maintain client satisfaction.",
   },
   {
     date: "September 2014 - December 2017",
     title: "Data Analyst",
     company: "Stats Perform",
     description:
-      "Asistí en el desarrollo de características para una aplicación móvil utilizando React Native. Participé en code reviews y sesiones de pair programming.",
+      "Excel in meeting strict deadlines, adapting quickly to changes, and continuously expanding my skill set to improve tools and processes. Proactive in suggesting enhancements, bringing strong analytical skills and meticulous attention to detail. Working efficiently in fast-paced environments, focus on delivering actionable insights from complex datasets, consistently enabling informed decision-making under tight timeframes. My ability to quickly adapt to evolving requirements has been key to driving improvements and maintaining high standards in data analysis.",
   },
 ]
 

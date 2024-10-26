@@ -3,12 +3,28 @@ import { motion, AnimatePresence } from "framer-motion"
 import { FaGithub, FaExternalLinkAlt, FaQuestionCircle } from "react-icons/fa"
 import {
   SiJavascript,
-  SiReact,
-  SiNodedotjs,
-  SiMongodb,
-  SiTypescript,
   SiHtml5,
+  SiReact,
+  SiFirebase,
   SiCss3,
+  SiVercel,
+  /* SiJava,
+  SiJunit,
+  SiAgile,
+  SiAmazonaws,
+  SiPython,
+  SiMysql,
+  SiSqlite,
+  SiTailwindcss,
+  SiGit,
+  SiSpring,
+  SiApachemaven,
+  SiJira,
+  SiJquery,
+  SiDocker,
+  SiPostman,
+  SiHibernate,
+  SiPowerbi, */
 } from "react-icons/si"
 import styles from "./Projects.module.css"
 
@@ -22,7 +38,7 @@ const projects = [
     github: "https://github.com/Chispa8/Shelter-project",
     summary:
       "A comprehensive platform facilitating animal adoption from shelters. Built with React for a responsive frontend, Node.js for robust backend operations, and Firebase for real-time database management. Features include animal profiles, adoption request system, and shelter management tools.",
-    stack: [SiReact, SiNodedotjs, SiMongodb, SiJavascript],
+    stack: [SiReact, SiFirebase, SiVercel, SiJavascript, SiHtml5, SiCss3],
   },
   {
     id: 2,
@@ -33,7 +49,7 @@ const projects = [
     github: "https://github.com/Chispa8/Realm-Game",
     summary:
       "Aplicación de gestión de tareas avanzada con funciones de colaboración en tiempo real. Incluye autenticación de usuarios, recordatorios personalizables, etiquetas para organización, y sincronización en múltiples dispositivos. Utiliza React para la interfaz de usuario, Node.js para la lógica del servidor, MongoDB para almacenamiento persistente, y TypeScript para un código más robusto y mantenible.",
-    stack: [SiReact, SiNodedotjs, SiMongodb, SiTypescript],
+    stack: [SiReact, SiJavascript, SiVercel, SiHtml5, SiCss3],
   },
   {
     id: 3,
@@ -44,7 +60,7 @@ const projects = [
     github: "https://github.com/yourusername/weather-dashboard",
     summary:
       "Dashboard de clima interactivo y completo. Ofrece visualizaciones de datos avanzadas para temperaturas, precipitaciones, y patrones climáticos. Incluye pronósticos a largo plazo, alertas meteorológicas personalizables, y mapas interactivos. Desarrollado con React para una interfaz de usuario dinámica y JavaScript para la lógica de la aplicación, integrando APIs de clima en tiempo real para datos precisos y actualizados.",
-    stack: [SiReact, SiJavascript],
+    stack: [SiReact, SiJavascript, SiHtml5, SiCss3],
   },
   {
     id: 4,
@@ -61,7 +77,7 @@ const projects = [
     id: 5,
     title: "Comming soon...",
     description:
-      "Always working on a next project to improve my skils wherever I am.",
+      "Always working on a next project to improve my skills wherever I am.",
     image: "/images/ComingSoon.PNG",
     github: "https://github.com/Chispa8",
     summary:

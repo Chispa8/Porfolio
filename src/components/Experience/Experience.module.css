@@ -57,7 +57,7 @@
 
 .timelineContent {
   padding: 15px;
-  background-color: #b6c1f4;
+  background-color: #018a7a;
   position: relative;
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -74,7 +74,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
-  color: var(--primary-color);
+  color: #1a237e;
 }
 
 .company {

@@ -4,31 +4,49 @@ import { useInView } from "react-intersection-observer"
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 import {
   SiJavascript,
-  SiReact,
-  SiNodedotjs,
-  SiMongodb,
+  /* SiJava,
+  SiJunit,
+  SiAgile,
+  SiAmazonaws, */
+  SiPython,
+  SiMysql,
+  SiSqlite,
   SiHtml5,
-  SiCss3,
-  SiTypescript,
-  SiNextdotjs,
-  SiGraphql,
-  SiDocker,
+  SiTailwindcss,
+  SiReact,
+  SiFirebase,
   SiGit,
+  SiSpring,
+  SiApachemaven,
+  SiJira,
+  SiJquery,
+  SiDocker,
+  SiPostman,
+  SiHibernate,
+  SiPowerbi,
 } from "react-icons/si"
 import styles from "./About.module.css"
 
 const skills = [
   { name: "JavaScript", icon: SiJavascript },
+  /* { name: "Java", icon: SiJava }, */
+  { name: "Python", icon: SiPython },
+  { name: "SQL", icon: SiSqlite },
+  { name: "HTML", icon: SiHtml5 },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  /* { name: "AWS", icon: SiAmazonaws }, */
   { name: "React", icon: SiReact },
-  { name: "Node.js", icon: SiNodedotjs },
-  { name: "MongoDB", icon: SiMongodb },
-  { name: "HTML5", icon: SiHtml5 },
-  { name: "CSS3", icon: SiCss3 },
-  { name: "TypeScript", icon: SiTypescript },
-  { name: "Next.js", icon: SiNextdotjs },
-  { name: "GraphQL", icon: SiGraphql },
-  { name: "Docker", icon: SiDocker },
+  { name: "Firebase", icon: SiFirebase },
   { name: "Git", icon: SiGit },
+  { name: "Spring", icon: SiSpring },
+  { name: "Maven", icon: SiApachemaven },
+  { name: "Jira", icon: SiJira },
+  { name: "JQuery", icon: SiJquery },
+  { name: "Docker", icon: SiDocker },
+  { name: "Postman", icon: SiPostman },
+  { name: "Hibernate", icon: SiHibernate },
+  { name: "Power BI", icon: SiPowerbi },
+  { name: "MySQL", icon: SiMysql },
 ]
 
 function About() {
