@@ -75,12 +75,15 @@ function Introduction() {
                 <div className={styles.slidingNameWrapper}>
                   <span className={styles.slidingName}>
                     Juan Carlos Poblete Uría
+                    <span className={styles.nameSeparator}></span>
                   </span>
                   <span className={styles.slidingName}>
                     Juan Carlos Poblete Uría
+                    <span className={styles.nameSeparator}></span>
                   </span>
                   <span className={styles.slidingName}>
                     Juan Carlos Poblete Uría
+                    <span className={styles.nameSeparator}></span>
                   </span>
                 </div>
               </div>

@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .introduction {
   position: relative;
   width: 100vw;
@@ -9,6 +13,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  font-family: "Poppins", sans-serif;
 }
 
 .slideContainer {
@@ -71,13 +76,22 @@
   width: 100%;
   height: 100%;
   font-size: 5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+}
+
+.nameSeparator {
+  display: inline-block;
+  width: 60px;
+  height: 0.1em;
+  background-color: white;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 
 @keyframes slideText {
@@ -91,6 +105,7 @@
 
 .content h2 {
   font-size: 2rem;
+  font-weight: 600;
   color: white;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -99,6 +114,7 @@
 
 .content p {
   font-size: 1.2rem;
+  font-weight: 400;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -123,10 +139,12 @@
 }
 
 .prevButton {
+  top: 70%;
   left: 2.5rem;
 }
 
 .nextButton {
+  top: 70%;
   right: 2.5rem;
 }
 
@@ -260,6 +278,11 @@
     height: 90px;
   }
 
+  .nameSeparator {
+    width: 40px;
+    margin: 0 20px;
+  }
+
   .content h2 {
     font-size: 1.5rem;
   }
@@ -277,10 +300,30 @@
 @media (max-width: 480px) {
   .slidingName {
     font-size: 2.5rem;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+
+  .slidingNameWrapper {
+    width: calc(300% + 90px);
   }
 
   .slidingNameContainer {
     height: 70px;
+  }
+
+  .nameSeparator {
+    width: 30px;
+    margin: 0 15px;
+  }
+
+  @keyframes slideText {
+    0% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(calc(-66.666% - 60px));
+    }
   }
 
   .content h2 {
