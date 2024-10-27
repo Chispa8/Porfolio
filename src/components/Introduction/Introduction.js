@@ -5,6 +5,8 @@ import {
   FaGithub,
   FaChevronLeft,
   FaChevronRight,
+  FaGlobeEurope,
+  FaFileDownload,
 } from "react-icons/fa"
 import styles from "./Introduction.module.css"
 
@@ -97,6 +99,10 @@ function Introduction() {
                 {slide.subtitle}
               </h2>
               <p>{slide.description}</p>
+              <div className={styles.locationTag}>
+                <FaGlobeEurope className={styles.globeIcon} />
+                <span>Located in Portugal and Spain</span>
+              </div>
             </div>
           </div>
         ))}
@@ -146,6 +152,13 @@ function Introduction() {
           aria-label="GitHub"
         >
           <FaGithub />
+        </a>
+        <a
+          href="public\images\CV Juan Carlos Poblete Uría.pdf"
+          download
+          aria-label="Download CV"
+        >
+          <FaFileDownload />
         </a>
       </div>
     </section>
