@@ -110,7 +110,7 @@ function About() {
         <div className={styles.content}>
           <motion.div className={styles.imageWrapper} variants={itemVariants}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/FotoVerde.PNG`}
+              src="/images/FotoVerde.PNG"
               alt="Juan Carlos"
               className={styles.profileImage}
             />
