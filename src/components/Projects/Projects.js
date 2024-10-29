@@ -44,33 +44,33 @@ const projects = [
     id: 2,
     title: "Realm Game",
     description:
-      "Una aplicación de gestión de tareas con autenticación de usuarios y almacenamiento en tiempo real.",
+      "My first video game built from scratch. It was a real challenge to figure out how everything is managed on screen.",
     image: "/images/RealmGame.PNG",
     github: "https://github.com/Chispa8/Realm-Game",
     summary:
-      "Aplicación de gestión de tareas avanzada con funciones de colaboración en tiempo real. Incluye autenticación de usuarios, recordatorios personalizables, etiquetas para organización, y sincronización en múltiples dispositivos. Utiliza React para la interfaz de usuario, Node.js para la lógica del servidor, MongoDB para almacenamiento persistente, y TypeScript para un código más robusto y mantenible.",
+      "A version of the popular card/RPG game Reigns. I spent nearly two months tackling and enjoying the challenge of creating it. It was rewarding to figure out how to manage the game's logic, and to select the right styles, icons, and fonts.",
     stack: [SiReact, SiJavascript, SiVercel, SiHtml5, SiCss3],
   },
   {
     id: 3,
     title: "Portfolio website",
     description:
-      "Un dashboard del clima que muestra pronósticos en tiempo real utilizando una API de clima.",
+      "This is it! Hope you're enjoying the website, you are only halfway through the project!",
     image: "/images/Porfolio.PNG",
     github: "https://github.com/yourusername/weather-dashboard",
     summary:
-      "Dashboard de clima interactivo y completo. Ofrece visualizaciones de datos avanzadas para temperaturas, precipitaciones, y patrones climáticos. Incluye pronósticos a largo plazo, alertas meteorológicas personalizables, y mapas interactivos. Desarrollado con React para una interfaz de usuario dinámica y JavaScript para la lógica de la aplicación, integrando APIs de clima en tiempo real para datos precisos y actualizados.",
+      "After exploring thousands of portfolios for inspiration, I finally created mine! I am still learning React, experimenting with gradients, testing effects, and much more...",
     stack: [SiReact, SiJavascript, SiHtml5, SiCss3],
   },
   {
     id: 4,
     title: "Dungeon Arcade",
     description:
-      "Un sitio web de portfolio personal construido con React y animaciones personalizadas.",
+      "Where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
     image: "/images/DungeonArcade.PNG",
     github: "https://github.com/yourusername/portfolio",
     summary:
-      "where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
+      "My first guided project using JavaScript (ES6), HTML, and CSS. FreeCodeCamp is a great place to learn at your own pace, testing your skills and progressing step-by-step to achieve the final outcome.",
     stack: [SiJavascript, SiHtml5, SiCss3],
   },
   {
@@ -81,7 +81,7 @@ const projects = [
     image: "/images/ComingSoon.PNG",
     github: "https://github.com/Chispa8",
     summary:
-      "Plataforma de blog escalable y potente con funcionalidades avanzadas de CMS. Incluye un editor de contenido rico para una creación de posts intuitiva, sistema de categorización y etiquetado avanzado para una mejor organización del contenido, y análisis de rendimiento integrado para optimizar el SEO. Desarrollada con Next.js para un rendimiento óptimo y SEO mejorado, GraphQL para consultas de datos eficientes, y TypeScript para un desarrollo más seguro y mantenible. La plataforma también ofrece autenticación de usuarios, comentarios en tiempo real, y un panel de administración completo.",
+      "Now involved in two different projects. Working to learn and practise more the backend side, working with different tools (Figam, Norton, more AWS)",
     stack: [FaQuestionCircle, FaQuestionCircle, FaQuestionCircle],
   },
 ]

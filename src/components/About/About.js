@@ -118,24 +118,26 @@ function About() {
           <div className={styles.bioWrapper}>
             <motion.div className={styles.bio} variants={itemVariants}>
               <p>
-                Hello! I'm Juan Carlos, a passionate Full Stack Developer with a
-                knack for creating modern and scalable web applications. My
-                journey in the world of coding began with a curiosity to
-                understand how things work, and it has evolved into a fulfilling
-                career where I combine technical expertise with creativity to
-                build innovative solutions.
+                Dedicated to analyzing problems and finding creative solutions,
+                especially when things get a bit stressful. Known for staying
+                calm under pressure, meeting tight deadlines, and delivering
+                quality work on time. Always on the lookout for new knowledge
+                and skills to stay sharp and up-to-date, because continuous
+                learning is a priority.
               </p>
               <p>
-                With experience in technologies like React, Node.js, and
-                MongoDB, I enjoy tackling complex problems and turning ideas
-                into reality. I'm always eager to learn new technologies and
-                stay up-to-date with the latest industry trends.
+                Adaptability is key, and there is a strong focus on staying
+                flexible when facing change. Bringing empathy into work is
+                important, too, as understanding different perspectives and
+                collaborating with people from all walks of life creates a
+                better work environment. It is all about teamwork and keeping an
+                open mind to get the best results.
               </p>
               <p>
-                When I'm not coding, you can find me exploring nature trails,
-                experimenting with photography, or diving into a good sci-fi
-                novel. I believe in the power of continuous learning and
-                personal growth, both in my professional and personal life.
+                Outside of work, life is full of activities that keep things
+                interesting. From taking care of dogs and practicing Jiu-Jitsu
+                to unwinding with movies, series, and video games. There is
+                always something to dive into and enjoy.
               </p>
             </motion.div>
             <motion.div className={styles.cta} variants={itemVariants}>
