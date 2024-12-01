@@ -8,6 +8,7 @@ import {
   SiFirebase,
   SiCss3,
   SiVercel,
+  SiTailwindcss,
   /* SiJava,
   SiJunit,
   SiAgile,
@@ -15,7 +16,6 @@ import {
   SiPython,
   SiMysql,
   SiSqlite,
-  SiTailwindcss,
   SiGit,
   SiSpring,
   SiApachemaven,
@@ -31,6 +31,17 @@ import styles from "./Projects.module.css"
 const projects = [
   {
     id: 1,
+    title: "Breatho Website",
+    description:
+      "This website was built with React, Tailwind CSS, HTML and Vercel.",
+    image: "/images/Breatho.PNG",
+    github: "https://github.com/Chispa8/Shelter-project",
+    summary:
+      "Luís Brito, also known as Breatho, is a multidisciplinary artist based in Lisbon. My main challenge in this project was to create a website that reflected his desired style—combining elegance with abstract concepts—while ensuring it was fully responsive. It was a pleasure working with Luís, as the collaboration was seamless, with clear and effective communication throughout the process.",
+    stack: [SiReact, SiTailwindcss, SiVercel, SiJavascript, SiHtml5, SiCss3],
+  },
+  {
+    id: 2,
     title: "Shelter Project",
     description:
       "A platform where you can adopt animals from a shelter built with React, Node.js and Firebase.",
@@ -41,7 +52,7 @@ const projects = [
     stack: [SiReact, SiFirebase, SiVercel, SiJavascript, SiHtml5, SiCss3],
   },
   {
-    id: 2,
+    id: 3,
     title: "Realm Game",
     description:
       "My first video game built from scratch. It was a real challenge to figure out how everything is managed on screen.",
@@ -52,7 +63,7 @@ const projects = [
     stack: [SiReact, SiJavascript, SiVercel, SiHtml5, SiCss3],
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio website",
     description:
       "This is it! Hope you're enjoying the website, you are only halfway through the project!",
@@ -63,7 +74,7 @@ const projects = [
     stack: [SiReact, SiJavascript, SiHtml5, SiCss3],
   },
   {
-    id: 4,
+    id: 5,
     title: "Dungeon Arcade",
     description:
       "Where you can battle against various enemies, visit the town to buy new weapons or heal your health to get back into the fight. Beware of the final boss, the dragon!",
@@ -74,7 +85,7 @@ const projects = [
     stack: [SiJavascript, SiHtml5, SiCss3],
   },
   {
-    id: 5,
+    id: 6,
     title: "Comming soon...",
     description:
       "Always working on a next project to improve my skills wherever I am.",
